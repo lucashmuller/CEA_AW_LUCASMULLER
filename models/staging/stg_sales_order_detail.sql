@@ -5,7 +5,7 @@ with
             , cast(salesorderdetailid as int) as sales_order_detail_id
             , cast(productid as int) as product_id
             , cast(orderqty as int) as quantity
-            , cast(unitprice as numeric) as unit_price
+            , unitprice as unit_price
             , unitpricediscount as discount
         from {{ source('raw_adventure_works','salesorderdetail')}}
     )
