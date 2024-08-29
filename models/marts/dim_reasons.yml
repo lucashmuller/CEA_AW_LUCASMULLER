@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: dim_reasons
+    description: ""
+    columns:
+      - name: sales_order_id
+        data_type: number
+        description: Chave primária da tabela de vendas.
+
+      - name: reason_name_aggregated
+        data_type: varchar
+        description: Coluna contendo o motivo da compra.

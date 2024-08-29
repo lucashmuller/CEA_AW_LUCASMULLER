@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: dim_sales_persons
+    description: Tabela de dimensão contendo informações sobre os vendedores.
+    columns:
+      - name: pk_sales_person
+        data_type: number
+        description: Chave primária dos vendedores.
+
+      - name: sales_person_fullname
+        data_type: varchar
+        description: Coluna contendo o nome completo do vendedor.

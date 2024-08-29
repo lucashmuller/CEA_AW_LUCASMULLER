@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: dim_customers
+    description: Dimensão com informações dos clientes.
+    columns:
+      - name: pk_customer
+        data_type: number
+        description: Chave primária dos clientes.
+
+      - name: fk_person
+        data_type: number
+        description: Chave estrangeira para a tabela de pessoas.
+
+      - name: person_fullname
+        data_type: varchar
+        description: Coluna contendo o nome completo do cliente
+
+      - name: fk_store
+        data_type: number
+        description: Chave estrangeira para a tabela de lojas.
+
+      - name: store_name
+        data_type: varchar
+        description: Coluna contendo o nome da loja.

@@ -1,0 +1,32 @@
+version: 2
+models:
+  - name: dim_territories
+    description: Tabela de dimensão contendo cidade, estado e país.
+    columns:
+      - name: pk_territory
+        data_type: number
+        description: Chave primária da dimensão.
+
+      - name: city
+        data_type: varchar
+        description: Coluna contendo o nome da cidade.
+
+      - name: fk_state
+        data_type: number
+        description: Chave estrangeira para a tabela de estados.
+
+      - name: state_province_code
+        data_type: varchar
+        description: Coluna contendo o código do estado.
+
+      - name: state_province_name
+        data_type: varchar
+        description: Coluna contendo o nome do estado.
+
+      - name: country_region_code
+        data_type: varchar
+        description: Coluna contendo o código do país.
+
+      - name: country_region_name
+        data_type: varchar
+        description: Coluna contendo o nome do país.

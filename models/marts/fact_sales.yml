@@ -1,0 +1,72 @@
+version: 2
+models:
+  - name: fact_sales
+    description: Tabela de fatos contendo informações sobre vendas.
+    columns:
+      - name: sk_sales
+        data_type: number
+        description: Chave substituta da tabela de vendas.
+
+      - name: pk_sales_order
+        data_type: number
+        description: Chave primária da tabela de vendas.
+
+      - name: sales_order_detail_id
+        data_type: number
+        description: Coluna contendo o id da tabela de detalhe da venda.
+
+      - name: fk_product
+        data_type: number
+        description: Chave estrangeira para a tabela de produtos.
+
+      - name: fk_customer
+        data_type: number
+        description: Chave estrangeira para a tabela de clientes.
+
+      - name: fk_territory
+        data_type: number
+        description: Chave estrangeira para a tabela de territórios.
+
+      - name: fk_credit_card
+        data_type: number
+        description: Chave estrangeira para a tabela de cartões de crédito.
+
+      - name: fk_sales_person
+        data_type: number
+        description: Chave estrangeira para a tabela de vendedores.
+
+      - name: unit_price
+        data_type: number
+        description: Coluna contendo o preço unitário do produto.
+
+      - name: quantity
+        data_type: number
+        description: Coluna contendo a quantidade de produtos vendidos.
+
+      - name: discount
+        data_type: float
+        description: Coluna contendo o desconto aplicado na venda.
+
+      - name: gross_revenue
+        data_type: number
+        description: Coluna contendo a receita bruta da venda.
+
+      - name: net_revenue
+        data_type: float
+        description: Coluna contendo a receita líquida da venda.
+
+      - name: reason_name
+        data_type: varchar
+        description: Coluna contendo o motivo da compra.
+
+      - name: order_date
+        data_type: timestamp_ntz
+        description: Coluna contendo a data da venda.
+
+      - name: order_status
+        data_type: varchar
+        description: Coluna contendo o status da venda.
+
+      - name: order_type
+        data_type: varchar
+        description: Coluna contendo o tipo da venda.

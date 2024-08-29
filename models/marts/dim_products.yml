@@ -1,0 +1,28 @@
+version: 2
+models:
+  - name: dim_products
+    description: Tabela de dimensão contendo informações sobre produtos.
+    columns:
+      - name: pk_product
+        data_type: number
+        description: Chave primária dos produtos.
+
+      - name: fk_product_subcategory
+        data_type: number
+        description: Chave estrangeira para a tabela de subcategorias de produtos.
+
+      - name: fk_product_category
+        data_type: number
+        description: Chave estrangeira para a tabela de categorias de produtos.
+
+      - name: product_name
+        data_type: varchar
+        description: Coluna contendo o nome do produto.
+
+      - name: product_subcategory_name
+        data_type: varchar
+        description: Coluna contendo o nome da subcategoria do produto.
+
+      - name: product_category_name
+        data_type: varchar
+        description: Coluna contendo o nome da categoria do produto.
