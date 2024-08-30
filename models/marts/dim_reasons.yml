@@ -1,7 +1,7 @@
 version: 2
 models:
   - name: dim_reasons
-    description: ""
+    description: "Dimensão com informações sobre os motivos de compra."
     columns:
       - name: sales_order_id
         data_type: number
